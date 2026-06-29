@@ -1,11 +1,11 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "@/routes/__root";
 import HomePage from "@/routes/index";
 import ApartmanElenaPage from "@/routes/apartman-elena";
 import ApartmanLaCasaDiElenaPage from "@/routes/apartman-la-casa-di-elena";
 import ApartmanPrimaveraPage from "@/routes/apartman-primavera";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <RootLayout />,
     children: [
